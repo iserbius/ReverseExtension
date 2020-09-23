@@ -22,7 +22,7 @@ final class KeyValueObserver: NSObject {
     }
     
     deinit {
-        try? ExceptionHandler.catchException {
+        try? REExceptionHandler.catchException {
             tareget?.removeObserver(self, forKeyPath: keyPath)
         }
     }
