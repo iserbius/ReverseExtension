@@ -6,13 +6,13 @@
 //
 //
 
-#import "ExceptionHandler.h"
+#import "include/REExceptionHandler.h"
 
 NSString *const NSExceptionReasonKey = @"NSExceptionReasonKey";
 NSString *const NSExceptionNameKey = @"NSExceptionNameKey";
 NSInteger const NSExceptionCode = -9999;
 
-@implementation ExceptionHandler
+@implementation REExceptionHandler
 
 static NSString *const kNSExceptionDomainError = @"NSExceptionDomainError";
 
