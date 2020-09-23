@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import ReverseExtensionObjc
 
 final class KeyValueObserver: NSObject {
     private weak var tareget: NSObject?

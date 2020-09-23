@@ -6,6 +6,7 @@
 //
 //
 
+import ReverseExtensionObjc
 import UIKit
 
 extension UITableView {
@@ -459,9 +460,9 @@ extension UITableView.ReverseExtension: UITableViewDataSource {
     
     // Data manipulation - insert and delete support
     
-    // After a row has the minus or plus button invoked (based on the UITableViewCellEditingStyle for the cell), the dataSource must commit the change
+    // After a row has the minus or plus button invoked (based on the UITableViewCell.EditingStyle for the cell), the dataSource must commit the change
     // Not called for edit actions using UITableViewRowAction - the action's handler will be invoked instead
-    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         dataSource?.tableView?(tableView, commit: editingStyle, forRowAt: reversedIndexPath(with: indexPath))
     }
     

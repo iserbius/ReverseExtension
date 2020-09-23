@@ -6,6 +6,7 @@
 //
 //
 
+import ReverseExtensionObjc
 import UIKit
 
 class UITableViewDelegateTransporter: DelegateTransporter, UITableViewDelegate {

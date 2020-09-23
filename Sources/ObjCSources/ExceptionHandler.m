@@ -12,7 +12,7 @@ NSString *const NSExceptionReasonKey = @"NSExceptionReasonKey";
 NSString *const NSExceptionNameKey = @"NSExceptionNameKey";
 NSInteger const NSExceptionCode = -9999;
 
-@implementation REExceptionHandler
+@implementation REExceptionHandler: NSObject
 
 static NSString *const kNSExceptionDomainError = @"NSExceptionDomainError";
 

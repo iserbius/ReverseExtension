@@ -12,7 +12,7 @@
 @property (nonnull, nonatomic, strong) NSHashTable<NSObject *> *delegates;
 @end
 
-@implementation DelegateTransporter
+@implementation DelegateTransporter: NSObject
 
 - (instancetype)initWithDelegates:(NSArray<id> *)delegates {
     self = [super init];
