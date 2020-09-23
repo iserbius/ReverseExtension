@@ -86,6 +86,22 @@ github "marty-suzuki/ReverseExtension"
 
 Make sure to add `ReverseExtension.framework` to "Linked Frameworks and Libraries" and "copy-frameworks" Build Phases.
 
+### Swift Package Manager
+
+#### Add dependencies
+Add the `ReverseExtension` package to the dependencies within your application’s `Package.swift` file. Substitute `"x.x.x"` with the latest `ReverseExtension` [release](https://github.com/marty-suzuki/ReverseExtension/releases).
+```swift
+.package(url: "https://github.com/marty-suzuki/ReverseExtension.git", from: "x.x.x")
+```
+Add `ReverseExtension` to your target's dependencies:
+```swift
+.target(name: "example", dependencies: ["ReverseExtension"]),
+```
+#### Import package
+```swift
+import ReverseExtension
+```
+
 ## Special Thanks
 
 [TouchVisualizer](https://github.com/morizotter/TouchVisualizer) (Created by [@morizotter](https://github.com/morizotter))
